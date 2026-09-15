@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+# 575MB source dataset - not stored in git
+cleaned_dataset/

@@ -1,0 +1,7 @@
+cycle_number
+voltage_mean
+voltage_min
+current_mean
+temp_mean
+temp_max
+ambient_temp

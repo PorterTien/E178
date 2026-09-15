@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(awk -F',' 'NR>1 && $1==\"discharge\" {print $4}' cleaned_dataset/metadata.csv)",
+      "Bash(awk -F',' 'NR==1 {print; next} $1==\"discharge\" {print}' cleaned_dataset/metadata.csv)",
+      "Bash(awk -F',' '{print $4, $3, $8}')",
+      "Bash(awk -F',' 'NR>1 && $1==\"discharge\" {print $4, $3}' cleaned_dataset/metadata.csv)",
+      "Bash(awk '{counts[$1]++; temps[$1]=$2} END {for \\(b in counts\\) print b, temps[b], counts[b]}')",
+      "Bash(awk '{temps[$1]=$2} END {for \\(b in temps\\) print b, temps[b]}')"
+    ]
+  }
+}
